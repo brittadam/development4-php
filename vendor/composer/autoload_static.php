@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b
+class ComposerStaticInitdc6c6bee04ca0e7db72938f25d8b76e5
 {
     public static $files = array (
         '79f66bc0a1900f77abe4a9a299057a0a' => __DIR__ . '/..' . '/starkbank/ecdsa/src/ellipticcurve.php',
@@ -19,6 +19,10 @@ class ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b
             'SendGrid\\EventWebhook\\' => 22,
             'SendGrid\\Contacts\\' => 18,
             'SendGrid\\' => 9,
+        ),
+        'P' => 
+        array (
+            'Promptopolis\\Framework\\' => 23,
         ),
     );
 
@@ -47,6 +51,10 @@ class ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b
         array (
             0 => __DIR__ . '/..' . '/sendgrid/php-http-client/lib',
         ),
+        'Promptopolis\\Framework\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Promptopolis/Framework',
+        ),
     );
 
     public static $classMap = array (
@@ -59,9 +67,9 @@ class ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit6c63fe5b2cc25fb7b911497cc218989b::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdc6c6bee04ca0e7db72938f25d8b76e5::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdc6c6bee04ca0e7db72938f25d8b76e5::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitdc6c6bee04ca0e7db72938f25d8b76e5::$classMap;
 
         }, null, ClassLoader::class);
     }
